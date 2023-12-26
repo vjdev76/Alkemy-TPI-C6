@@ -1,11 +1,12 @@
-// src/App.jsx
 import React, { useState } from 'react';
 import ProductList from './components/ProductList';
 import ShoppingCart from './components/ShoppingCart';
+import HelpModal from './components/HelpModal';
 import './App.css';
 
 function App({ products }) {
   const [cart, setCart] = useState([]);
+  const [showHelpModal, setShowHelpModal] = useState(false);
 
   const addToCart = (product) => {
     const existingItem = cart.find(item => item.product.id === product.id);
@@ -34,14 +35,20 @@ function App({ products }) {
   };
 
   const checkout = () => {
-    // Implementar lógica de pago simulada y confirmación de compra
+    // Aca iria la logica del checkout
     alert('Compra confirmada. Total: $' + calculateTotal());
+  };
+
+  const toggleHelpModal = () => {
+    setShowHelpModal((prevShowHelpModal) => !prevShowHelpModal);
   };
 
   return (
     <div>
       <ProductList products={products} addToCart={addToCart} />
       <ShoppingCart cart={cart} adjustQuantity={adjustQuantity} calculateTotal={calculateTotal} checkout={checkout} />
+      {showHelpModal && <HelpModal onClose={toggleHelpModal} />}
+      <button onClick={toggleHelpModal}>Mostrar Ayuda</button>
     </div>
   );
 }
