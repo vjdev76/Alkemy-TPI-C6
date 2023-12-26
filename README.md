@@ -1,8 +1,8 @@
-#Informe de Funcionalidades - Aplicación de Compras - Trabajo Práctico Integrador - Alkemy C6 🚀
+# Informe de Funcionalidades - Aplicación de Compras - Trabajo Práctico Integrador - Alkemy C6 🚀
 
-##App.jsx
+## App.jsx
 
-##Descripción: Componente principal de la aplicación.
+## Descripción: Componente principal de la aplicación.
 
 Funcionalidad:
 
@@ -12,9 +12,9 @@ Permite ajustar la cantidad de productos en el carrito.
 Calcula el total de la compra.
 Simula un proceso de pago con confirmación de compra.
 
-##ProductList.jsx
+## ProductList.jsx
 
-##Descripción: Componente que muestra la lista de productos disponibles.
+## Descripción: Componente que muestra la lista de productos disponibles.
 
 Funcionalidad:
 
@@ -22,9 +22,9 @@ Presenta la lista de productos con imágenes, nombres y precios.
 Convierte los precios a la moneda seleccionada (USD o ARS) utilizando una API para obtener la cotización actual del dólar.
 Permite cambiar entre USD y ARS (no se actualiza en precio en el carrito, este ultimo solo opera con el monto en dolares)
 
-##ShoppingCart.js
+## ShoppingCart.js
 
-##Descripción: Componente que muestra y gestiona el carrito de compras.
+## Descripción: Componente que muestra y gestiona el carrito de compras.
 
 Funcionalidad:
 
@@ -33,9 +33,9 @@ Calcula y muestra el total del carrito.
 Permite proceder al pago y muestra el formulario de pago.
 Simula un proceso de pago con confirmación de compra.
 
-##PaymentForm.jsx
+## PaymentForm.jsx
 
-##Descripción: Componente que presenta un formulario de pago.
+## Descripción: Componente que presenta un formulario de pago.
 
 Funcionalidad:
 
