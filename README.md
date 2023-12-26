@@ -16,7 +16,7 @@ Funcionalidad:
 - Convierte los precios a la moneda seleccionada (USD o ARS) utilizando una API para obtener la cotización actual del dólar.
 - Permite cambiar entre USD y ARS (no se actualiza en precio en el carrito, este ultimo solo opera con el monto en dolares)
 
-## ShoppingCart.js * Componente que muestra y gestiona el carrito de compras.
+## ShoppingCart.jsx * Componente que muestra y gestiona el carrito de compras.
 
 Funcionalidad:
 
