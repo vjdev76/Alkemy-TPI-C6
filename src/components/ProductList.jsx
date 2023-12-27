@@ -11,7 +11,7 @@ const ProductList = ({ products, addToCart }) => {
         const response = await fetch("https://api.bluelytics.com.ar/v2/latest");
         const data = await response.json();
 
-        // Obtener la tasa de cambio según la moneda seleccionada
+        // Obtengo la cotizacion
         const rate =
           currency === "USD" ? data.oficial.value_sell : data.blue.value_sell;
 
@@ -44,10 +44,7 @@ const ProductList = ({ products, addToCart }) => {
       <div className="cards-container">
         {products.map((product, index) => (
           <div key={product.id} className="product-card">
-            <img
-              src={`/src/assets/images/${product.image}`}
-              alt={product.name}
-            />
+            <img src={`assets/images/${product.image}`} alt={product.name} />
             <div className="product-info">
               <h3>{product.name}</h3>
               <p>
@@ -67,6 +64,3 @@ const ProductList = ({ products, addToCart }) => {
 };
 
 export default ProductList;
-
-
-
