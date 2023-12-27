@@ -44,7 +44,10 @@ const ProductList = ({ products, addToCart }) => {
       <div className="cards-container">
         {products.map((product, index) => (
           <div key={product.id} className="product-card">
-            <img src={`assets/images/${product.image}`} alt={product.name} />
+            <img
+              src={`/src/assets/images/${product.image}`}
+              alt={product.name}
+            />
             <div className="product-info">
               <h3>{product.name}</h3>
               <p>
